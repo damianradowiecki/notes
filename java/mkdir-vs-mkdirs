@@ -1,0 +1,18 @@
+mkdir - creates only one catalogue
+mkdirs - create all catalogues (in structure)
+
+example:
+
+//Let's assume we are in /temp catalogue and it is empty
+
+File file = new File("/temp/test/test");
+file.mkdir(); // will fail
+file.mkdirs(); // will not fail
+
+//This will not fail too
+//Let's assume we are in /temp catalogue and it is empty
+
+File file = new File("/temp/test");
+file.mkdir();
+file = new File("temp/test/test");
+file.mkdir();
