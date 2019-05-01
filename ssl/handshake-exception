@@ -1,0 +1,8 @@
+1. Get certificate.
+  a) from browser (chrome) -> green padlock -> certificate -> details -> export
+  b) from anyone
+2. Find cacerts in JRE
+3. Import certificate:
+  keytool -import -alias example -keystore  "C:\Program Files (x86)\Java\jre1.6.0_22\lib\security\cacerts" -file example.cer
+  (password -> changeit)
+4. Restart JVM (server/application)
