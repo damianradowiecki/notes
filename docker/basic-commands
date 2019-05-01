@@ -1,0 +1,31 @@
+Build image from Dockerfile (in current directory -> . )
+docker build .
+
+Run docker image
+docker run image_name
+docker run image_id
+
+Run docker image in detached mode (container is running in background)
+docker run -d image_name
+docker run -d image_id
+
+Delete container
+docker rm container_id
+
+Delete image
+docker rmi image_id
+
+Show all images
+docker images
+
+Show all containers
+docker -a ps
+
+Stop all containers
+docker stop $(docker ps -a -q)
+
+Stop container
+docker stop container_id
+
+Show container logs
+dockers logs container_id
