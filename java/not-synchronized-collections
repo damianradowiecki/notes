@@ -1,0 +1,6 @@
+All standard collections (from Collections API) are not synchronized.
+
+Solution:
+List<String> synchronizedList = Collections.synchronizedList(anyListOfString);
+
+https://docs.oracle.com/javase/10/docs/api/java/util/Collections.html#synchronizedList(java.util.List)
