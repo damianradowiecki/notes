@@ -1,0 +1,5 @@
+1. Create private public key pair ssh-keygen
+2. Copy public key (example name cat id_rsa.pub) to git repository (github,gitlab...) using browser (website)
+3. Create config entries:
+  git config --global user.name "bob..."
+  git config --global user.email bob@...
