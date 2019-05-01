@@ -1,0 +1,13 @@
+1. Local variable type inference
+  var list = new ArrayList<>();
+  var n = 50;
+  
+2. Collections API
+  List.copyOf
+  Set.copyOf
+  //Return unmodifable collections
+  
+3. Optional.ofElseThrow
+
+4. Root Certificates
+  cacerts keystore is filled with some certificates by default (and there will be more)
