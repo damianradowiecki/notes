@@ -1,0 +1,11 @@
+Find process on port:
+netstat –ano | find PORT_NUMBER
+a - display all connections
+n - display active connentions
+o - display process id (PID)
+
+Kill process:
+taskkill /PID PROCESS_ID
+
+Force to kill process:
+taskkill /F /PID PROCESS_ID
