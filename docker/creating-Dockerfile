@@ -1,0 +1,21 @@
+#Choose proper parent image (from https://hub.docker.com/) and use it as base
+FROM 11.0.3-jdk-slim-stretch
+
+#Choose application directory
+WORKDIR /application
+
+#Copy files to image
+COPY . /application
+
+#Do some preparations
+RUN 
+
+#Make some ports available
+EXPOSE 80
+
+#Add environment variable
+ENV VARIABLE_NAME value
+
+#Default run script. Can be changed. When running image there is command line option.
+CMD ["standalone.sh", "-b", "0.0.0.0"]
+
