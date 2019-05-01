@@ -1,0 +1,5 @@
+F5
+Refreshes a web page. But if it is possible it uses browser cache (JS, HTML, CSS)
+
+Ctrl+F5
+Refreshes a web page and doesn't use browser cache.
