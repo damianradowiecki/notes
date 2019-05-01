@@ -1,0 +1,9 @@
+301 REDIRECT
+  Redirection to other page with content:
+  HTTP/1.1 301 Moved Permanently
+  Location: http://www.example.org/
+  Content-Type: text/html
+  Content-Length: 174
+
+304 NOT MODIFIED
+  If page returns 304 status, a browser knows that it can use cache because the page is not modified (from last request).
