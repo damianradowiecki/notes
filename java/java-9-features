@@ -1,0 +1,41 @@
+1. JShell
+  interaktywna konsola uruchamiana za pomocą polecenia jshell
+
+2. Collection Factory Methods
+  List.of(... ; Map.of(... ; Set.of(...
+
+3. Interface Private Methods
+
+4. Modules
+  module-info.java:
+   module pl.itandmusic.example{
+    requires java.base
+   }
+   
+5. Stream API
+  takeWhile
+    Stream.of(2, 4, 6, 8, 9, 10, 12)
+      .takeWhile(n -> n % 2 == 0)
+      .forEach(System.out::println);
+    // prints out:
+    // 2
+    // 4
+    // 6
+    // 8
+  dropWhile
+    Stream.of(2, 4, 6, 8, 9, 10, 12)
+      .dropWhile(n -> n % 2 == 0)
+      .forEach(System.out::println);
+    // prints out:
+    // 9
+    // 10
+    // 12
+  Stream.ofNullable(null).count();
+    // result:
+    // 0
+  iterate with three arguments
+    IntStream.iterate(3, x -> x < 10, x -> x + 3).forEach(System.out::println);
+    // prints out:
+    // 3
+    // 6
+    // 9
