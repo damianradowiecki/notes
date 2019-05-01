@@ -1,1 +1,1 @@
--Dmaven.surefire.debug
+mvn -Dmaven.surefire.debug test
