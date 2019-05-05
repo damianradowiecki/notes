@@ -1,0 +1,4 @@
+0. Creating java files (*.java).
+1. Compiling java files (*.java) to byte code (*.class), using javac command.
+2. Running java code (with java command). JVM executes byte code directly.
+3. If some code is used repetedly JIT (Just In Time) compiler translates it to machine code to be able to execute it faster.
