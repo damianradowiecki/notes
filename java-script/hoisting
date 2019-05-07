@@ -1,0 +1,8 @@
+In JavaScript all variable DECLARATIONS are hoisted.
+So this code snippet will work properly:
+
+a = 3;
+alert(a);
+var a;
+
+Variables defined with *let* or *const* are not hoisted.
