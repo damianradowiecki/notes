@@ -1,0 +1,36 @@
+Its about extending existing class.
+
+(from www.w3schools.com)
+Prototype Inheritance
+All JavaScript objects inherit properties and methods from a prototype:
+
+Date objects inherit from Date.prototype
+Array objects inherit from Array.prototype
+Person objects inherit from Person.prototype
+The Object.prototype is on the top of the prototype inheritance chain:
+
+Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+Example:
+
+//Defining class
+function Person(name, surname){
+
+  this.name = name;
+  this.surname = surname;
+
+  this.changeName = function(name){
+    this.name = name;
+  };
+
+}
+
+//So if Person inherits from Person.prototype we can:
+Person.prototype.fullName = function(){
+  return this.name + this.surname;
+};
+
+//So we can use it:
+var damian = new Person("Damian", "Radowiecki");
+alert(damian.fullName());
+
