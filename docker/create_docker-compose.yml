@@ -1,8 +1,12 @@
+# Choosing version. Some docker-compose versions are incompatible with some docker versions.
 version: '3'
+# Defining services which will run
 services:
+  # Service built from current directory (.) Dockerfile. Ports are mapped from 5000 to 5000
   service_1:
     build: .
     ports:
      - "5000:5000"
+  # Service built from image (from docker hub)
   service_2:
     image: "redis:alpine"
