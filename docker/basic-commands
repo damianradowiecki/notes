@@ -37,7 +37,7 @@ DOCKER-COMPOSE
 Starts docker compose (all images). And builds them if they are not built yet.
 docker-compose up
 
-Like previous but
+Like previous but in detached mode (containers are running in background)
 docker-compose up -d
 
 Build docker compose
