@@ -1,0 +1,6 @@
+//converts variable to numeric value
+Number(variable);
+//converts variable to string value
+String(variable);
+//converts variable to boolean value
+Boolean(variable);
