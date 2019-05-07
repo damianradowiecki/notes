@@ -1,0 +1,18 @@
+//Creating class:
+
+function Person(name){
+  
+  //instance variable
+  this.name = name;
+  
+  //method
+  this.changeName = function(name){
+    this.name = name;
+  };
+
+}
+
+//Using:
+
+var damian = new Person("Damian");
+damian.changeName("Damian Radowiecki");
