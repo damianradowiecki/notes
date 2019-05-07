@@ -1,3 +1,5 @@
+DOCKER
+
 Build image from Dockerfile (in current directory -> . )
 docker build .
 
@@ -29,3 +31,14 @@ docker stop container_id
 
 Show container logs
 dockers logs container_id
+
+DOCKER-COMPOSE
+
+Starts docker compose (all images). And builds them if they are not built yet.
+docker-compose up
+
+Like previous but
+docker-compose up -d
+
+Build docker compose
+docker-compose build
