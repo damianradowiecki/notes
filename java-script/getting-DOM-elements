@@ -1,0 +1,11 @@
+//By Id:
+documents.getElementById("id");
+
+//By tag name (returns array of elements):
+document.getElementByTagName("body");
+
+//By CSS selector (returns first element):
+document.querySelector(".myCSSClass");
+
+//By CSS selector (returns array of elements):
+document.querySelectorAll(".myCSSClass");
