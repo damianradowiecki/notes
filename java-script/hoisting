@@ -5,4 +5,11 @@ a = 3;
 alert(a);
 var a;
 
-Variables defined with *let* or *const* are not hoisted.
+Variables defined with let or const are not hoisted.
+
+JavaScript initializations are not hoisted.
+So this code will not print 3:
+
+alert(a);
+a = 3;
+var a;
