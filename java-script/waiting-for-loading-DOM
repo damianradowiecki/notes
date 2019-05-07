@@ -1,0 +1,12 @@
+Waits until DOM is loaded:
+
+document.addEventListener("DOMContentLoaded", function(){
+  //code
+});
+
+Waits unitl DOM and all pictures, animations and so on... will be loaded:
+
+window.onload = function(){
+  //code
+}
+
