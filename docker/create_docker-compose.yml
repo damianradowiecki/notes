@@ -1,0 +1,8 @@
+version: '3'
+services:
+  service_1:
+    build: .
+    ports:
+     - "5000:5000"
+  service_2:
+    image: "redis:alpine"
