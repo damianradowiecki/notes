@@ -1,5 +1,29 @@
 1. Local variable syntac for lambda expressions:
-  //It:
-  IntFunction<Integer> doubleIt1 = (int x) -> x * 2;
-  //Can be replaced with:
-  IntFunction<Integer> doubleIt2 = (var x) -> x * 2; 
+    //It:
+    IntFunction<Integer> doubleIt1 = (int x) -> x * 2;
+    //Can be replaced with:
+    IntFunction<Integer> doubleIt2 = (var x) -> x * 2;
+    
+2. Compilation and running with one command:
+  java Main.java
+  
+3. String methods:
+  -isBlank()
+  -lines()
+  -strip(), stripLeading(), stripTrailing()
+  -repeat(int)
+ 
+4. Remove the Java EE and CORBA Modules:
+  -java.xml.ws 
+  -java.xml.bind
+  -java.activation 
+  -java.xml.ws.annotation 
+  -java.corba 
+  -java.transaction 
+  -java.se.ee 
+  -jdk.xml.ws
+  -jdk.xml.bind
+
+5. ChaCha20 and Poly1305 Cryptographic Algorithms implementation
+
+6. Deprecate the Nashorn JavaScript Engine
