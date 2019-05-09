@@ -1,0 +1,19 @@
+Some Java functions have their equivalents in processors machine code instructions.
+So instead of doing it step by step in Java code, it is better to leave it for processor to process it.
+It sometimes runs even 5 times faster.
+And some methods in JDK are instrinsic (can use processor instruction directly).
+
+//This code can be run directly (in Java - look for code below) or AMD processor POPCNT inctruction can be used instead:
+Integer.bitCount(44);
+
+
+// Integer class implemetation
+public static int bitCount(int i) {
+    // HD, Figure 5-2
+    i = i - ((i >>> 1) & 0x55555555);
+    i = (i & 0x33333333) + ((i >>> 2) & 0x33333333);
+    i = (i + (i >>> 4)) & 0x0f0f0f0f;
+    i = i + (i >>> 8);
+    i = i + (i >>> 16);
+    return i & 0x3f;
+}
