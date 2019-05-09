@@ -1,0 +1,5 @@
+1. Local variable syntac for lambda expressions:
+  //It:
+  IntFunction<Integer> doubleIt1 = (int x) -> x * 2;
+  //Can be replaced with:
+  IntFunction<Integer> doubleIt2 = (var x) -> x * 2; 
