@@ -24,6 +24,8 @@
   -jdk.xml.ws
   -jdk.xml.bind
 
-5. ChaCha20 and Poly1305 Cryptographic Algorithms implementation
+* 5. ChaCha20 and Poly1305 Cryptographic Algorithms implementation added
 
-6. Deprecate the Nashorn JavaScript Engine
+* 6. Deprecated the Nashorn JavaScript Engine
+
+* 7. Improved intrinsics (instrinsic methods)
