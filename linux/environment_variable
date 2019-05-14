@@ -1,0 +1,5 @@
+Display environment variable:
+echo $HOME
+
+Set environment variable:
+export PATH=${PATH}:/home/vivek/bin
