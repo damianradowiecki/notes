@@ -1,0 +1,20 @@
+JSONP - JSON with Padding
+
+JSONP lets download data from server omitting cross-domain request limits.
+By requesting script it is possible to omit cross-domain policy (script src doesn't follow cross-domain policy).
+
+1. Create JS function which will be invoked (by script added from service):
+
+  function test(dataFromServer){
+    //code
+  }
+  
+2. Create service which will return our method call with arguments:
+
+  //service should return
+  test('some data which is needed in front end');
+  
+3. Include in script tag reference to service:
+  
+  //it will fire test function in java script
+  <script src="testCall.php">
