@@ -1,0 +1,5 @@
+By default hibernate uses FlushMode.AUTO which means:
+
+The Session is sometimes flushed before query execution in order to ensure that queries never return stale state.
+
+An entity with dirty state must be attached to your session and Hibernate persists it before executing the query.
