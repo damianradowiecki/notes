@@ -1,0 +1,10 @@
+It is possible to pass more or less arguement to java script function.
+Function will be executed despite of it.
+
+To access function arguments use arguments array object:
+
+function testFunction(){
+  if(arguments.length >0){
+    alert(arguments[0]);
+  }
+}
