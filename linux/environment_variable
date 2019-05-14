@@ -2,4 +2,14 @@ Display environment variable:
 echo $HOME
 
 Set environment variable:
-export PATH=${PATH}:/home/vivek/bin
+export TEST=${TEST}test123
+
+
+
+Special environment variable PATH needs to be set in ~/.profile (for all shells) or in ~/.bashrc (for bash only).
+export PATH="$PATH:/path/to/dir"
+
+After setting in file, to refresh session (apply changes):
+source ~/.profile
+or
+source ~/.bashrc
