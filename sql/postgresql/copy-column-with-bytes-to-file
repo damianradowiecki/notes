@@ -1,0 +1,2 @@
+COPY (SELECT byteacol WROM mytab WHERE ...) TO 'filename' (FORMAT
+binary)
