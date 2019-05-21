@@ -1,0 +1,14 @@
+User thread:
+Thread thread = new Thread(...);
+thread.start();
+
+Daemon thread:
+Thread thread = new Thread(...);
+thread.setDaemon(true);
+thread.start();
+
+JVM ends when last USER THREAD ends its work -> all daemon threads are killed immediately (after last user thread ends).
+
+So daemon thread should not be used to do business logic.
+
+Daemon threads are used for example by garbage collector.
