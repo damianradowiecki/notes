@@ -1,0 +1,28 @@
+Application server is a server which has full support for JavaEE specification.
+
+Web server is a server which supports subset of application server features.
+
+
+
+Web server                        Application server
+
+Servlets                          Servlets
+JSP                               JSP
+EL                                EL
+WebSocket                         WebSocket
+JTA                               JTA
+JASPIC                            EJB
+                                  CDI
+                                  JMS
+                                  JavaMail
+                                  JAX-WS
+                                  JAX-RS
+                                  Bean Validation
+                                  JSON-P
+
+
+Web servers:
+Apache Tomcat, Jetty, Undertow
+
+Application servers:
+Apache TomEE, Oracle WebLogic, WebSphere, WildFly, GlassFish
