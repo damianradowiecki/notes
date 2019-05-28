@@ -1,0 +1,5 @@
+Starting server:
+asadmin start-domain --verbose
+
+Setting Java home variable for server:
+set "server.java-config.java-home=/opt/java-se-8u40-ri/"
