@@ -1,6 +1,8 @@
 Starting server:
 asadmin start-domain --verbose
 
+It runs by default on port 8080
+
 Glassfish 5 can only run on JRE 8 so to set it:
   In file: .../glassfishVERSION/glassfish/config/asenv.conf
   AS_JAVA="PATH_TO_JDK"
