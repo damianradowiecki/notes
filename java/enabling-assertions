@@ -1,0 +1,2 @@
+To enable assertions add -ea to VM options in IDE or put after java command:
+java -ea Main
