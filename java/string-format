@@ -1,0 +1,21 @@
+String.format("plainText%[argument_index][flags][width][.precision][conversion]", arg_1, arg_2);
+
+[argument_index] - argument index
+
+[flags] - flags
+    +   before digits must be plus or minus sign: +5, -34, +1
+    ,   groups by three digits (by comma): 100,000,000.00, 453,342.99, 2,432
+    -   left alignment
+    
+[width] - width: |    20|
+                 |  2334|
+    
+[.precision] - precision: 2.00, 45.34900000, 3.33
+
+[conversion]
+  d - digit
+  f - floating point
+  x - hexadecimal
+  s - string
+  c - character
+  b - bool
