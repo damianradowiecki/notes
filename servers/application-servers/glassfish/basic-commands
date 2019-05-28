@@ -1,5 +1,6 @@
 Starting server:
 asadmin start-domain --verbose
 
-Setting Java home variable for server:
-set "server.java-config.java-home=/opt/java-se-8u40-ri/"
+Glassfish 5 can only run on JRE 8 so to set it:
+  In file: .../glassfishVERSION/glassfish/config/asenv.conf
+  AS_JAVA="PATH_TO_JDK"
