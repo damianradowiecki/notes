@@ -1,0 +1,26 @@
+CAT-5
+It is UTP (Unshielded Twisted Pair) cable.
+It can be 10 Base T, 100 Base T, 1000 Base T (10 Mbps, 100 Mbps, 1000 Mbps).
+8 sigle cables twisted in pairs (orange blue green brown)
+Orange sends, green receives.
+Other colors are for future use.
+
+RJ45
+Connector for CAT-5 cable.
+
+568A vs 568B
+These are wiring standards - it is about where single cable (CAT-5) should be putted in RJ45 connector.
+
+
+
+COAXIAL CABLE
+Almost unused cabling.
+BNC connectors, T-connectors, terminators.
+Bus topology.
+Must be terminated.
+
+
+
+FIBER OPTIC CABLE
+Connectors: ST (straight tip), SC (subscriber connector), LC (lucent connector).
+Single of multi node (single or multi light streams).
