@@ -1,0 +1,16 @@
+MODULE DEPENDENCIES - dependencies from Maven or Ivy repository
+
+FILE DEPENDENCIES
+
+SCOPES:
+  api (it packs all dependencies to your app file jar or war)
+  implementation (dependencies are only during development and build. No dependencies in jar or war)
+  testImplementation (only during test phase)
+  compileOnly (is still valid. It was added in 3.0 to replace provided and not compile)
+  
+OLD VERSION SCOPES:
+  compile (replaced by api and implementation)
+  testCompile (replaced with testImplementation)
+  debugCompile (replaced with debugImplementation, can't find info about it in the Internet...)
+  androidTestCompile (replaced with androidTestImplementation,  can't find info about it in the Internet)
+  
