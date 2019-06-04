@@ -1,0 +1,24 @@
+All defaults are in super (parent) pom.xml file https://maven.apache.org/ref/3.0.4/maven-model-builder/super-pom.html
+
+BUILD:
+
+<build>
+    <directory>target</directory>
+    <outputDirectory>target/classes</outputDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+    </testResources>
+</build>
+
+PACKAGING
+
+By default maven packages project to jar file.
