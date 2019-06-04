@@ -1,0 +1,11 @@
+P - plain text (tekst jawny)
+C - ciphered text (zaszyfrowany tekst)
+K - key (klucz szyfrowania)
+E - encryption mechanizm (mechanizm szyfrowania)
+D - decryption mechanizm (mechanizm deszyfrowania)
+
+Funkcja E bierze tekst jawny wraz z kluczem jako argumenty. I generuje zaszyfrowany tekst.
+     E(P,K) -> C
+     
+Funkcja D bierze zaszyfrowany tekst wraz z kluczem jako argumentu. I zwraca tekst jawny.
+     D(C,K) -> P
