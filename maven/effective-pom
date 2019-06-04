@@ -1,0 +1,6 @@
+Effective pom is a full hierarchy of poms (parent poms, active profiles and user defined settings) 
+  in one -> super pom + parent pom + project pom
+
+Command to show an effective pom:
+
+mvn help:effective-pom
