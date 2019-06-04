@@ -1,0 +1,18 @@
+A plugin is a collection of goals.
+Running goal of a plugin:
+
+mvn pluginName:goalName
+
+Goals are executed in phases.
+Every goal can be bind to any phase.
+Default phase-to-goal bindings:
+
+Phase	                  plugin:goal
+process-resources	      resources:resources
+compile	                compiler:compile
+process-test-resources	resources:testResources
+test-compile	          compiler:testCompile
+test	                  surefire:test
+package	                ejb:ejb or ejb3:ejb3 or jar:jar or par:par or rar:rar or war:war
+install	                install:install
+deploy	                deploy:deploy
