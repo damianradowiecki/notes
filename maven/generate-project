@@ -1,0 +1,3 @@
+mvn archetype:generate -DgroupId=... -DartifactId=... -Dpackage=... -Dversion=...
+
+Then maven shows all archetypes. User must choose one, and then project structure will be created.
