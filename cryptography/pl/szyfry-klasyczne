@@ -1,0 +1,11 @@
+Szyfry klasyczne - to szyfry z czasów, w którycz nie istaniły komputery. Były one oparte na lieterach (a nie na bitach).
+  Przykłady szyfrów klasycznych to: Szyfr Cezara, Szyf Vigenere'a.
+  
+Szyfr Cezara (I wiek) - polegał na przesunięciu liter alfabetu o określoną liczbę. 
+  Przykład z przesunięciem o trzy litery (przesuniecie o trzy litery to klucz) do przodu:
+  DAMIAN -> GDPLDR
+      
+Szyfr Vigenere'a (XVI wiek) - podobny do szyfru Cezara, lecz kluczem był tekst na przykład,
+  jeśli klucz to ABC. Oznaczało to, że pierwsza litera była przesunięta o 1 (pierwsza litera alfabetu,
+  druga o dwa (druga litera alfabetu), trzecia o trzy (trzecia litera alfabetu), czwarta o 1
+  (powrót na początek klucza).
