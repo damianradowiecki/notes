@@ -4,6 +4,11 @@ Naming service - service which runs on a server and can keep objects.
 Directory service - service which runs on a server and can keep objects. 
   You can put them to or retrieve them from service (by name). (A little bit different API in comparison to naming service).
 
+Naming vs. directory service
+	Naming service returns one object (by name).
+	
+	Directory service returns a map of attributes. 
+	Key: Damian Radowiecki --> GIves attributes: [phone_number:3423, address:street_24]
 
 JNDI - Java Naming And Directory Interface. It is the common interface for naming and directory services.
   It is based on Context interface, which are implemented by JNDI vendors:
