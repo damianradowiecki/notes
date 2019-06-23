@@ -1,0 +1,37 @@
+Naming service - service which runs on a server and can keep objects. 
+  You can put them to or retrieve them from service (by name).
+
+Directory service - service which runs on a server and can keep objects. 
+  You can put them to or retrieve them from service (by name). (A little bit different API in comparison to naming service).
+
+
+JNDI - Java Naming And Directory Interface. It is the common interface for naming and directory services.
+  It is based on Context interface, which are implemented by JNDI vendors:
+
+public interface Context {
+  
+    public Object lookup(String name) throws NamingException;
+    public void bind(String name, Object obj) throws NamingException;
+    public void unbind(String name) throws NamingException;
+
+    // and a lot of other methods...
+
+};
+
+Popular Context implementation: InitialContext, InitialDirContext (for directory services), InitialLdapContext.
+
+How to run/use:
+1. Run server which has JNDI service.
+2. Run client code. Example:
+  public class JNDI {
+	  public static void main(String[] args) throws NamingException {
+      //connects to JNDI service on default IP and port
+		  Context context = new InitialContext();
+      //puts something to service
+		  context.bind("test", "Something");
+      //gets something by name
+		  String result = (String)context.lookup("test");
+      //prints result
+		  System.out.println(result);
+	  }
+  }
