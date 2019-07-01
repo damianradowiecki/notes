@@ -1,0 +1,6 @@
+olugins {
+  id 'java'
+  ...
+}
+
+Plugins add new tasks to build and other things (TODO).
