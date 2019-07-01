@@ -1,0 +1,22 @@
+Gradle is based on tasks.
+
+It is possible to create tasks:
+helloWorld {
+  println "Hello World!"
+}
+
+Ready task are in plugins.
+For example 'java' plugin adds the following tasks:
+compileJava
+processResources
+classes
+compileTestJava
+processTestResources
+testClasses
+jar
+javadoc
+test
+uploadArchives
+clean
+
+To see all tasks of project -> gradle tasks --all
