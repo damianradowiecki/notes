@@ -1,4 +1,4 @@
-POP3 - Post Office Protocol 3. It is used to access emails from email server. 
+POP3 - Post Office Protocol 3. It is used to access emails from an email server. 
     By default when you download any email (from server) it is deleted on remote machine 
     and saved on local machine. So when you then check your email folders on other machine
     there are no emails which you have seen on first computer.
