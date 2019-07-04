@@ -5,3 +5,8 @@ POP3 - Post Office Protocol 3. It is used to access emails from an email server.
     Of course it is possible to change the default behaviour. But all email clients
     (programms which uses the same email) must change this behaviour.
     
+    It is not encrypted connection protocol.
+    Default port is 110.
+
+POP3S is encrypted version of POP3.
+    Default port is 995.
