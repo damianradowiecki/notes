@@ -1,1 +1,3 @@
 IMAPS - IMAP over SSL/TLS. It is just IMAP connection but secured with SSL or TLS.
+
+  Default port is 993
