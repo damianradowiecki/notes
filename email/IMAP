@@ -2,3 +2,7 @@ IMAP - Internet Message Access Protocol. It is used to access emails from an ema
   IMAP enables many clients to work with one email account, by keeping emails on a remote server
   (not on local machine, like POP3 works by default). It is now recommended protocol for
   message accessing.
+  
+  It is worth to mention that it is not a secure connection (not encrypted).
+
+  Default port is 143.
