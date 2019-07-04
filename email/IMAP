@@ -1,0 +1,4 @@
+IMAP - Internet Message Access Protocol. It is used to access emails from an email server.
+  IMAP enables many clients to work with one email account, by keeping emails on a remote server
+  (not on local machine, like POP3 works by default). It is now recommended protocol for
+  message accessing.
