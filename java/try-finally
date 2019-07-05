@@ -1,0 +1,11 @@
+try{
+  //some code
+}
+finally{
+  //This code will always be executed
+}
+
+Block finally is always executed. Unless:
+1. System.exit int before finally block
+2. JVM will crash before finally block
+3. Endless loop in try will occur
