@@ -1,0 +1,7 @@
+1. If one of the operands is a double, the other is promoted to double
+2. Otherwise, if one of the operands is a float, the other is promoted to float
+3. Otherwise, if one of the operands is a long, the other is promoted to long
+4. Otherwise, both are considered int
+
+
+* from https://www.baeldung.com/java-primitive-conversions
