@@ -1,0 +1,28 @@
+Klucz jednorazowy jest generowany losowo do tylko jednej transakcji (dlatego jednorazowy) 
+    i jest on tak samo długi jak cała wiadomość. Dzięki temu, że jest tak długi jak wiadomość,
+    zapewnia 100 procentowe bezpieczeństwo.
+    
+    Jest on jednak bezpieczny w 100% jeśli zostanie użyty tylko raz i jest równy długości wiadomości.
+    
+    Jednak nie jest to idealne roziązanie ponieważ w np. w celu zaszyfrowania dysku twardego o rozmiarze
+    1TB potrzebny jest drugi dysk o rozmiarze 1TB który będzie zawierał klucz.
+
+
+Szyfrowanie:
+
+SZYFROGRAM = WIADOMOSC XOR  KLUCZ
+
+Przykład:
+WIADOMOSC :01101101
+KLUCZ     :10110100
+SZYFROGRAM:11011001
+
+Odszyfrowywanie:
+
+WIADOMOSC = SZYFROGRAM XOR KLUCZ
+
+Przykład:
+WIADOMOSC :11011001
+KLUCZ     :10110100
+SZYFROGRAM:01101101
+
