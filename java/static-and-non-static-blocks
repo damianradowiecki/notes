@@ -1,0 +1,38 @@
+static block is executed when the class is loaded:
+  static {
+		System.out.println("static block");
+	}
+  
+non-static block is executed before constructor run
+(if cnostructor is not executed this block will not execute):
+  {
+		System.out.println("static block without static keyword");
+	}
+  
+EXAMPLE:
+
+public class InitializationOrder {
+	{
+		System.out.println("static block without static keyword");
+	}
+	
+	public InitializationOrder() {
+		System.out.println("constructor");
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("main");
+		new InitializationOrder();
+	}
+
+	static {
+		System.out.println("static block");
+	}
+}
+
+static block
+main
+static block without static keyword
+constructor
+
+
