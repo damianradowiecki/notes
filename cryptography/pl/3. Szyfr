@@ -1,0 +1,17 @@
+Szyfr składa się z dwóch komponenetów PERMUTACJI (permutation) i TRYBU PRACY (mode of operation).
+
+PERMUTACJA - funkcja która przekształca obiekt (najczęście litery) w taki sposób, że każdy obiekt ma jednoznaczną odwrotność.
+TRYB PRACY - algorytm używający PERMUTACJI w celu przekształcenia wiadomości o dowolnym rozmiarze.
+
+Przykład:
+Szyfr Cezara:
+PERMUTACJA - przesunięcie litery w alfabecie o 3 litery do przodu.
+TRYB PRACY - potarzaj cały czas tę samą permutację dla każdej litery.
+
+Szyfr Vigenere'a:
+PERMUTACJA - przesuniecie litery w alfabecie.
+TRYB PRACY - 1. Przesuniecię pierwszej litery o 3 do przodu. 
+             2. Przesunięcie drugiej litery do tyłu o 3 litery.
+             3. Przesunięcie trzeciej litery o 1 do przodu.
+             4. Przesunięcie czwartej litery o 3 do przodu (tak jak w kroku pierwszym).
+             5. ...
