@@ -1,0 +1,9 @@
+STARTTLS - is a keyword used to initiate a secure/encrypted (SSL/TLS) SMTP connection.
+
+  To enable secure connection in Java:
+    //...
+    Properties properties = new Properties();
+    properties.add("mail.smtp.auth", true);
+    properties.add("mail.starttls.enable", true);
+    //...
+    
