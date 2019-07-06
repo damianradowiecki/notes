@@ -1,0 +1,12 @@
+SMTP - Simple Mail Transfer Protocol. It is a protocol used ONLY to send emails to server (to download use IMAP or POP3).
+      A message can have one or more receipients and one sender. So when You send an email it goes to SMTP server and
+      this server sends it to receipients SMTP servers and then they can be downloaded using IMAP or POP3.
+      
+      CLIENT_1   ---SMTP-->   SMTP_SERVER_1   ---SMTP-->   SMTP_SERVER_2   <--IMAP/POP3---   CLIENT_2
+      
+SMTP REPLY CODES:
+...
+220	- <domain> Service ready
+250 - Requested mail action okay, completed
+...
+https://www.greenend.org.uk/rjk/tech/smtpreplies.html
