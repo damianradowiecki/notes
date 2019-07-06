@@ -1,1 +1,18 @@
-test
+The main use of anchor tags - <a></a> - is as hyperlinks. 
+That basically means that they take you somewhere. Hyperlinks require the href property, because it specifies a location.
+
+Hash:
+A hash - # within a hyperlink specifies an html element id to which the window should be scrolled.
+
+href="#some-id" would scroll to an element on the current page such as <div id="some-id">.
+
+href="//site.com/#some-id" would go to site.com and scroll to the id on that page.
+
+Scroll to Top:
+href="#" doesn't specify an id name, but does have a corresponding location - the top of the page. 
+Clicking an anchor with href="#" will move the scroll position to the top.
+
+Block scrolling:
+To block scrolling You need to use id which doesn't exists on page for example href="#!".
+
+* from https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used
