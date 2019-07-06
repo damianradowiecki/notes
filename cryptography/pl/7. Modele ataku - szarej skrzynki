@@ -1,0 +1,5 @@
+Modele szarej skrzynki - w tym modelu atakujący ma dostęp do urządzenia szyfrującego.
+
+  1. Atak kanałem bocznym - atakujący mierzy różne wartości urządzenia szyfrującego takie jak
+                           czas wykonania czy też napięcie elektryczne. Jest to atak nieinwazyjny.
+  2. Atak inwazyjny - polega na ingerencji w urządzenie - na przykład użycie kwasu azotowego.
