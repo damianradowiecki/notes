@@ -1,0 +1,13 @@
+Modele czarnych skrzynek - w tym modelu atakujący widzi tylko to co jest na wejściu i wyjściu - 
+    algorytm szyfrujący i klucz jest poza jego zasięgiem - traktuje je jako czarną skrzynkę -
+    nie wiadomo co tam jest. Może alalizować tylko wejście i wyjście.
+    
+                  PLAINTEXT(INPUT) --> BLACK_BOX --> CIPHERTEXT(OUTPUT)
+    
+    1. Ciphertext-only attack (COA) - atakujący podsłuchuje tylko szyfrogramy które wychodzą z czarnej skrzynki.
+    2. Known-plaintext attack (KPA) - atakujący podsłuchuje zarówno wejście (tekst jawny) i wyjście (szyfrogram).
+                                      Dzięki temu jest w stanie stworzyć listę par tekst jawny - szyfrogram.
+    3. Chosen-plaintext attack(CPA) - atakujący nie jest pasywny i sam wykonuje zapytanie do czarnej skrzynki,
+                                      w celu poznania szyfru dla konkretnego tekstu.
+    4. Chosen-ciphertext attack(CCA)- atakujący wysyła wybrany przez siebie szyfrogram do czarnej skrzynki, w
+                                      celu poznania takstu jawnego.
