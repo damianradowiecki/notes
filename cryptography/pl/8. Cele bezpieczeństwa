@@ -1,0 +1,12 @@
+Cele bezpieczeństwa - czyli jaki powinien być szyfr.
+
+Szyfr powinien cechować się:
+1. Nierozróżnialnością - indistinguishability - IND - czyli patrząc na szyfr nie jesteś w stanie powiedzieć
+  czy to jest szyfr czy może jest to losowy ciąg znaków.
+  
+2. Niedeformowalność - non-malleability - NM - czyli nie można stworzyć innego szyfru używając obecnego.
+  Czyli, że zmienisz np. ostatnie 8 liczb szyfru i to odpowiada za ostatnią literę zaszyfrowanego tekstu.
+  
+  Przykład dla szyfru z kluczem jednorazowym:
+  C1 = P1 XOR K -> C2 = C1 XOR 1 -> P2 = P1 XOR 1
+  Dlatego szyfr z kluczem jednorazowym powinien być używany tylko raz!
