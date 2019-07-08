@@ -1,0 +1,8 @@
+SPRING BOOT AUTO CONFIGURATION
+
+It is all about using @EnableAutoConfiguration annotation.
+If annotation is present it scans classpath for libraries and then guess the best configuration for You.
+
+For example 
+If there is no database dependency it creates bean with in memory database configuration.
+If there is embedded tomcat it creates configuration for it.
