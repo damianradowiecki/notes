@@ -1,0 +1,6 @@
+SPRING BOOT
+
+1. Provides a way to create standalone application - everything is in jar file.
+2. There is (in jar) an embedded server like Tomcat, Undertow, Jetty...
+3. There is a project initializer https://start.spring.io/
+4. Convention over configuration - auto configure many things.
