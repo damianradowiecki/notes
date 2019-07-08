@@ -1,0 +1,18 @@
+Thymeleaf - is a Java template engine (like JSF, JSP...). It is quite well integrated with Spring framework.
+
+Example:
+
+<table>
+  <thead>
+    <tr>
+      <th th:text="#{msgs.headers.name}">Name</th>
+      <th th:text="#{msgs.headers.price}">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="prod: ${allProducts}">
+      <td th:text="${prod.name}">Oranges</td>
+      <td th:text="${#numbers.formatDecimal(prod.price, 1, 2)}">0.99</td>
+    </tr>
+  </tbody>
+</table>
