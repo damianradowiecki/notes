@@ -1,0 +1,39 @@
+VIRTUAL HOSTING
+
+It is the ability to host multiple domains on one server.
+
+DOMAIN A    -->                                                                 --> APP A
+
+DOMAIN B    -->                                                                 --> APP B
+                        DNS SERVER ---> SERVER(WITH VIRTUAL HOSTING ENABLED) 
+DOMAIN C    -->                                                                 --> APP C
+
+DOMAIN D    -->                                                                 --> APP D
+
+
+Virtual hosts can be:
+1. Name-based
+2. IP-based
+3. Port-based
+
+CONFIGURATION EXAMPLE:
+
+<VirtualHost 172.20.30.40:80>
+    ServerName www.example.com
+    DocumentRoot "/www/domain-80"
+</VirtualHost>
+
+<VirtualHost 172.20.30.40:8080>
+    ServerName www.example.com
+    DocumentRoot "/www/domain-8080"
+</VirtualHost>
+
+<VirtualHost 172.20.30.40:80>
+    ServerName www.example.org
+    DocumentRoot "/www/otherdomain-80"
+</VirtualHost>
+
+<VirtualHost 172.20.30.40:8080>
+    ServerName www.example.org
+    DocumentRoot "/www/otherdomain-8080"
+</VirtualHost>
