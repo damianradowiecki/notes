@@ -1,0 +1,26 @@
+&nbsp; - non-breaking space.
+
+It tells an interpreter (browser) to NOT wrap the line so:
+Ttttttttttttteeeeeeeeeeeeeeeeexxxxxxxxxxxxxtttttttttttttttttt&nbsp;ttttteeeexxxxxxxxttttt
+will be rendered as one word:
+Ttttttttttttteeeeeeeeeeeeeeeeexxxxxxxxxxxxxtttttttttttttttttt ttttteeeexxxxxxxxttttt
+But this:
+Ttttttttttttteeeeeeeeeeeeeeeeexxxxxxxxxxxxxtttttttttttttttttt ttttteeeexxxxxxxxttttt
+will be rendered in two lines (when the text will be longer than a screen width):
+Ttttttttttttteeeeeeeeeeeeeeeeexxxxxxxxxxxxxtttttttttttttttttt 
+ttttteeeexxxxxxxxttttt
+
+
+In addition...
+
+This:
+<p>Word1          Word2</p>
+and this:
+<p>Word1 Word2</p>
+will render:
+Word1 Word2
+
+But this
+<p>Word1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Word2</p>
+will render:
+Word1      Word2
