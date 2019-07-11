@@ -1,0 +1,7 @@
+Collation specify the rules about sorting and character classification depending on language.
+
+Sorting (order by) can be different for different languages.
+The alphabet in Poland goes: abcde  Maybe in some other country: vadec
+
+Case sensiivity may matter or not (SQL server can be set to be case sensitive or not)
+  
