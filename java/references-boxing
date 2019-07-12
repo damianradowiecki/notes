@@ -1,0 +1,17 @@
+From JLS:
+
+If the value p being boxed is true, false, a byte, or a char in the range \u0000 to \u007f, 
+or an int or short number between -128 and 127 (inclusive), 
+then let r1 and r2 be the results of any two boxing conversions 
+of p. It is always the case that r1 == r2.
+
+It is just an optimalization (to have less references in a heap).
+
+It simply means that:
+Integer a = 127;
+Integer b = 127;
+Integer c = 128;
+Integer d = 128;
+
+System.out.println(a==b); --> true
+System.out.println(c==d); --> false
