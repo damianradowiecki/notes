@@ -1,0 +1,4 @@
+@SpringBootConfiguration - the same as @Configuration
+@EnableAutoConfiguration - enables auto-configuration mode. Spring tries to
+              guess the best bean configuration.
+@ComponentScan - it looks for spring componenets and initializes them.
