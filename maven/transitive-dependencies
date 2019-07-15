@@ -1,0 +1,4 @@
+There are two types of Maven dependencies:
+
+Direct: These are dependencies defined in your pom.xml file under the <dependencies/> section.
+Transitive: These are dependencies that are dependencies of your direct dependencies.
