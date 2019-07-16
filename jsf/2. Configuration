@@ -1,0 +1,21 @@
+faces-config.xml + web.xml
+
+faces-config.xml
+In faces-config.xml file there are:
+-managed beans
+-the navigation between web pages
+-data validators - Used to check the validity of UI input
+-data converters -Used to translate between UI and model
+
+web.xml
+In web.xml file You need to map all requests to FacesServlet:
+...
+<servlet>
+  <servlet-name>Faces Servlet</servlet-name>
+  <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Faces Servlet</servlet-name>
+  <url-pattern>/faces/*</url-pattern>
+</servlet-mapping>
+...
