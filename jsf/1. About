@@ -1,0 +1,6 @@
+JavaServer Faces (JSF) is a UI component based Java Web application framework.
+
+Component based means that there are a lot of predefined components which
+  are ready for using them. (All component inherits from UIComponent class)
+
+A JSF application run in a standard web container, for example Tomcat or Jetty.
