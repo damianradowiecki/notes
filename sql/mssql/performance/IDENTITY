@@ -1,0 +1,33 @@
+IDENTITY is a way to autoincrement values for. For example:
+
+create table Test
+(
+id INT IDENTITY, 
+name VARCHAR(20)
+)
+
+IDENTITY == INDENTITY(1,1)
+So it will start from 1 and will be increased by 1
+
+create table Test
+(
+id INT IDENTITY(2,3), 
+name VARCHAR(20)
+)
+
+IDENTITY(2,3)
+So it will start from 2 and will be increased by 3
+
+How to use IDENTITY:
+insert values('Damian') into Test;
+insert values('Andrzej') into Test;
+Just ommit a column with IDENTITY function.
+
+If there is IDENTITY function on table we cannot insert something directly.
+We must set identity insert:
+SET IDENTITY_INSERT Test ON
+And then switch it off:
+SET IDENTITY_INSERT Test OFF
+
+To check current value for identity for a particular table:
+SELECT IDENT_CURRENT(table_name)
