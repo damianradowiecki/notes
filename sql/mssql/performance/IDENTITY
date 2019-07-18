@@ -31,3 +31,6 @@ SET IDENTITY_INSERT Test OFF
 
 To check current value for identity for a particular table:
 SELECT IDENT_CURRENT(table_name)
+
+
+From MSSQL Server 2012 sequences are available.
