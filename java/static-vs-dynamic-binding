@@ -1,0 +1,45 @@
+Binding - associating a method call with a method
+
+Static binding (early binding) - happens when there are static, final or private method call.
+  Bindings are created in compile time.
+Dynamic binding - happens in other cases.
+  Bindings are created in runtime.
+  
+Static binding example:
+class TestA{
+  public static void test(){
+    System.out.println("test TestA");
+  }
+}
+class TestB extends TestA{
+  public static void test(){
+    System.out.println("test TestB");
+  }
+  
+  public static void main(String[] args){
+    TestA testA = new TestA();
+    TestA testB = new TestB();
+    testA.test(); // static binding --> "test TestA"
+    testB.test(); // static binding --> "test TestA"
+  }
+}
+
+Dynamic binding example:
+
+class TestA{
+  public void test(){
+    System.out.println("test TestA");
+  }
+}
+class TestB extends TestA{
+  public void test(){
+    System.out.println("test TestB");
+  }
+  
+  public static void main(String[] args){
+    TestA testA = new TestA();
+    TestA testB = new TestB();
+    testA.test(); // dynamic binding --> "test TestA"
+    testB.test(); // dynamic binding --> "test TestB"
+  }
+}
