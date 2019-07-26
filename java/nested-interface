@@ -1,0 +1,13 @@
+Java enables creation of nested intefaces both in classes and in interfaces:
+
+class TestA{
+  interface TestI{
+  //...
+  }
+}
+
+interface TestB{
+  interface TestI{
+  //...
+  }
+}
