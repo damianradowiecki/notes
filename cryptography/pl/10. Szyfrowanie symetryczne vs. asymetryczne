@@ -1,0 +1,11 @@
+Szyfrowanie symetryczne - dwie strony konwersacji posiadają klucz (istnieje jeden klucz).
+
+Szyfrowanie asymetryczne - tutaj istnieją dwa klucze prywatny i publiczny.
+   Klucz prywatny posiada TYLKO osoba do której wiadomości są kierowane.
+   Służy on do odszyfrowywania wiadomości.
+   Klucz publiczny jest ogólnie dostępny i każdy może go posiadać.
+   Służy on do szyfrowania wiadomości, ale nie jest możliwe odszyfrowanie
+   wiadomości za pomocą tego klucza.
+   
+   Klucz publiczny może być wyznaczony na podstawie klucza prywatnego,
+   lecz uzyskanie klucza prywatnego na podstawie klucza publicznego jest nie możliwe.
