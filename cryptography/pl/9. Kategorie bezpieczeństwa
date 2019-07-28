@@ -1,1 +1,10 @@
+Szyfrogramy powinny spełniać pewne kategorie bezpieczeństwa.
+Konwencja nazewnictwa kategorii bezpieczeństwa: CEL_BEZPIECZEŃSTWA-MODEL_ATAKU
 
+Najbardziej popularne kategorie bezpieczeństwa:
+IND-CPA
+IND-CCA
+NM-CPA
+NM-CCA
+    
+* Rozwinięcia skrótów w poprzednich notatkach
