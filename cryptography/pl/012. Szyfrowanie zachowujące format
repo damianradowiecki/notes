@@ -1,0 +1,4 @@
+Szyfrowanie zachowujące format (format-preserving encryption) - generalnie szyfry pracują na bitach. 
+  Ale możliwe jest też szyfrowanie w danym formacie. Na przykład dla adresów IP:
+   
+   FPE(127.0.0.1, K) -> 212.91.12.2
