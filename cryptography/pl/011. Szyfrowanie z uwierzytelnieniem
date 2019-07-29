@@ -1,0 +1,6 @@
+Szyfrowanie z uwierzytelnieniem (Authenticated encryption AE) - rodzaj szyfrowania symetrycznego (dwie strony mają klucz).
+  W odróżnieniu od standardowego mechanizmu szyfrowania tym, że na wyjściu otrzymywany jest nie tylko
+  szyfrogram, ale też znacznik uwierzytelniania. Który służy do odszyfrowania komunikatu:
+  
+        
+  P-> AE ->
