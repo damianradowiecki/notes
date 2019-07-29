@@ -2,5 +2,11 @@ Szyfrowanie z uwierzytelnieniem (Authenticated encryption AE) - rodzaj szyfrowan
   W odróżnieniu od standardowego mechanizmu szyfrowania tym, że na wyjściu otrzymywany jest nie tylko
   szyfrogram, ale też znacznik uwierzytelniania. Który służy do odszyfrowania komunikatu:
   
-        
-  P-> AE ->
+  Szyfrowanie:      
+  AE(P, K) -> C,T
+  
+  Odszyfrowywanie:
+  AE(C,T,K) -> P
+  
+  
+  Znacznik ten zapewnia integralność - nikt nie zmienił szyfrogramu.
