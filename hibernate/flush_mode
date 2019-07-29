@@ -12,3 +12,42 @@ An entity with dirty state must be attached to your session and Hibernate persis
 
 Changing flush mode:
 <property name="org.hibernate.flushMode" value="COMMIT"/>
+
+AUTO flush mode dark side (based on https://dzone.com/articles/dark-side-hibernate-auto-flush article)
+1. If there is a save on unrelated entities:
+  Product product = new Product();
+  session.persist(product);
+  assertEquals(0L,  session.createQuery("select count(id) from User").uniqueResult());
+  assertEquals(product.getId(), session.createQuery("select p.id from Product p").uniqueResult());
+  
+  Hibernate will:
+  1. Execute select count from User
+  2. Try to execute count from Product but will see that there is the entiry to save
+  3. Save the entity
+  4. Execute select count from Product
+  
+  So there is no save action before selecting count from User. The order of executing queries
+  is not always the same as in a code.
+  
+  Solution: Include Product entity name in count query in any way. So Hibernate
+   will execute save on Product entity before selecting count.
+  
+2. If there is a mix of HQL and native query
+  Product product = new Product();
+  session.persist(product);
+  assertNull(session.createSQLQuery("select id from product").uniqueResult());
+  
+  Hibernate will:
+  1. Execute select id from product
+  2. Persist the new Product
+  
+  Hibernate does not analyze native queries and does not know if any change/save on an entity should be flushed.
+  
+  Solutions:
+  1. Instruct Hibernate which Entities should be synchronized (addSynchronizedEntityClass):
+    session.createSQLQuery("select id from product").addSynchronizedEntityClass(Product.class).uniqueResult()
+  2. Change default AUTO flush mode to ALWAYS for a specific query (setFlushMode):
+    session.createSQLQuery("select id from product").setFlushMode(FlushMode.ALWAYS).uniqueResult()
+  3. Explicitly flush the session:
+    session.flush()
+  
