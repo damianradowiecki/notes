@@ -1,3 +1,0 @@
-REST API is mainly based on @RestController annotation.
-
-@RestController = @Contorller + @ResponseBody
