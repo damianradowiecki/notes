@@ -1,7 +1,9 @@
 Spring Boot has default setting for logging.
 
-Hovewer there is possible to change defaults in file:
-resources/application.yml
+Hovewer there is possible to change defaults in file application.yml or in application.properties file.
+
+
+Configuration in resources/application.yml file:
 
 Logging pattern:
 %clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{${sys:PID}}{magenta}
@@ -15,3 +17,8 @@ logging:
     org.springframework.web: ERROR
     com.howtodoinjava: DEBUG
     org.hibernate: ERROR
+
+Configuration in resources/application.properties file:
+
+logging.level.org.springframework=DEBUG
+logging.level.com.howtodoinjava=DEBUG
