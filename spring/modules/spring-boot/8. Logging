@@ -1,0 +1,17 @@
+Spring Boot has default setting for logging.
+
+Hovewer there is possible to change defaults in file:
+resources/application.yml
+
+Logging pattern:
+%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{${sys:PID}}{magenta}
+%clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan}
+%clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}
+
+Logging level:
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR
