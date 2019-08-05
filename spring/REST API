@@ -1,0 +1,35 @@
+REST API is mainly based on @RestController annotation.
+
+@RestController = @Contorller + @ResponseBody
+
+REST based on @Controller:
+
+@Controller
+@RequestMapping("books")
+public class SimpleBookController {
+ 
+    @GetMapping("/{id}", produces = "application/json")
+    public @ResponseBody Book getBook(@PathVariable int id) {
+        return findBookById(id);
+    }
+ 
+    private Book findBookById(int id) {
+        // ...
+    }
+}
+
+REST based on @RestController:
+
+@RestController
+@RequestMapping("books-rest")
+public class SimpleBookRestController {
+     
+    @GetMapping("/{id}", produces = "application/json")
+    public Book getBook(@PathVariable int id) {
+        return findBookById(id);
+    }
+ 
+    private Book findBookById(int id) {
+        // ...
+    }
+}
