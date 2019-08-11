@@ -1,0 +1,21 @@
+Unix:
+/dev/urandom
+cat /dev/urandom zaśmieci cały ekran losowymi wartościami
+
+Linux:
+/dev/urandom
+/dev/random
+  podobnie jak urandom z tym, że random oszacowuje poziom entropii i zwraca bity dopóki,
+  poziom entropi jest dosyć wysoki. Jeśli poziom entropii spada poniżej pewnej wartości
+  wtedy przestaje zwracać bity
+  
+Windows:
+CryptGenRandom()
+BcryptGenRandom() // funkcja zastąpiła funckcję CryptGenRandom
+
+Mikroprocesor Intel
+Posiada on sprzętowy (zaszyty w procesorze) generator liczb losowych wywoływany za pomocą instrukcji RDRAND asemblera.
+Jest on dużo szybszy od programistycznych i co istotne niezależny od systemu operacyjnego.
+Podczas gdy programistyczne PRNG polegają na danych analogowych, PRNG procesora Intel sam generuje pulę entropii.
+Jest to mały obwód sprzętowy który przełącza się (pomiędzy 0 a 1) z częstotliwością 800 MHz zależnie,
+od wahań szumów cieplnych.
