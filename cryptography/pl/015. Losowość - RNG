@@ -1,5 +1,6 @@
 RNG - Random Number Generator - generator liczb losowych. Jest to generator który wykorzystuje zjawiska
   analogowe (napięcie, temperaturę, szum akustyczny, ruchy myszą) do wytwarzania losowych bitów.
+  Generatory tego typu są dosyć wolne.
   Należy odróżnić generatory programowe (algorytmy wyliczają losowe bity), które nie mogą służyć jako
   generatory liczb losowych w kryptografii ponieważ ich algorytmy są zbyt przewidywalne.
   
