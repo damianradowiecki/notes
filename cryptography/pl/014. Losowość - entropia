@@ -1,0 +1,4 @@
+Entropia - jest to poziom niepewności (równego rozkładu prawdopodobieństwa zdarzenia). 
+  Jeśli rzucamy kostką do gry (i nie jest ona obciążona z żadnej strony) wtedy entropia jest maksymalna,
+  czyli nie jesteśmy w stanie przybliżyć wyniku rzutu.
+  Lecz jeśli kostka do gry zostanie dociążona z którejś ze stron, wtedy entropia jest już niższa niż maksymalna.
