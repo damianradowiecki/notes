@@ -1,13 +1,19 @@
 Unix:
 /dev/urandom
-cat /dev/urandom zaśmieci cały ekran losowymi wartościami
+cat /dev/urandom losowe wartości są generowane i wyświetlane na ekran bez ustanku.
 
 Linux:
 /dev/urandom
 /dev/random
   podobnie jak urandom z tym, że random oszacowuje poziom entropii i zwraca bity dopóki,
   poziom entropi jest dosyć wysoki. Jeśli poziom entropii spada poniżej pewnej wartości
-  wtedy przestaje zwracać bity
+  wtedy przestaje zwracać bity.
+  
+cat /dev/random losowe wartości są generowane i wyświetlane na ekran do czasu wyczerpania się
+  entropii. Aby zwiększyć entropię należy np. poruszać myszką (jeśli jesteśmy w trybie graficznym)
+  lub też na oddzielnym terminalu wpisywać dowolny tekst. Spowoduje to wyświetlenie kolejnych 
+  losowych wartości.
+  
   
 Windows:
 CryptGenRandom()
