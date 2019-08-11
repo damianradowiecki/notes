@@ -1,0 +1,6 @@
+RNG - Random Number Generator - generator liczb losowych. Jest to generator który wykorzystuje zjawiska
+  analogowe (napięcie, temperaturę, szum akustyczny, ruchy myszą) do wytwarzania losowych bitów.
+  Należy odróżnić generatory programowe (algorytmy wyliczają losowe bity), które nie mogą służyć jako
+  generatory liczb losowych w kryptografii ponieważ ich algorytmy są zbyt przewidywalne.
+  
+QRNG - Quantum Random Number Generator - generator liczb losowych opierający się na zjawiskach mechaniki kwantowej.
