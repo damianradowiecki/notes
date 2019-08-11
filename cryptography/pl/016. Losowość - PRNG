@@ -1,0 +1,7 @@
+PRNG - Pseudo Random Number Generator - pseudo generator liczb losowych. Wykorzystuje on powolny generator RNG,
+  do wygenerowania kilku bitów rzeczywiście losowych. I na ich podstawie tworzy długie ciągi losowych bitów.
+  
+  PRNG wykorzystuje tak zwaną pulę entropii - ciągle napływające bity dostarczane przez RNG.
+  Na podstawie tej puli mechanizm zwany DRBG (deterministic random bits generator) rozciąga
+  bity puli na o wiele dłuższe sekwencje. Deterministyczny - przy takim samym wejściu otrzymamy
+  zawsze taki sam rezultat na wyjściu.
