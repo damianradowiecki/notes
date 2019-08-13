@@ -1,0 +1,77 @@
+Transaction isolation types:
+
+READ UNCOMMITTED
+It enables dirty reads. So it destroys ACID.
+
+Session 1
+START TRANSACTION
+INSERT A INTO TABLE_A
+
+Session 2
+START TRANSACTION
+SELECT * FROM TABLE_A
+->A   <--- dirty read
+->1 ROW
+
+Session 1
+ROLLBACK
+SELECT * FROM TABLE_A
+-> 0 ROWS
+
+
+
+READ COMMITTED
+If one transaction commit something, at once in every transaction it is visible.
+
+Session 1
+START TRANSACTION
+INSERT A INTO TABLE_A
+
+Session 2
+START TRANSACTION
+SELECT * FROM TABLE_A
+->0 ROWS
+
+Session 1
+SELECT * FROM TABLE_A
+->A
+->1 ROW
+COMMIT
+
+
+Session 2
+SELECT * FROM TABLE_A
+->A   <--- dirty read
+->1 ROW
+COMMIT
+
+
+
+REPEATABLE READ
+If one transaction commit something, changes are not visible for transactions
+which were started before commit.
+
+Session 1
+START TRANSACTION
+INSERT A INTO TABLE_A
+
+Session 2
+START TRANSACTION
+SELECT * FROM TABLE_A
+->0 ROWS
+
+Session 1
+SELECT * FROM TABLE_A
+->A
+->1 ROW
+COMMIT
+
+Session 2
+SELECT * FROM TABLE_A
+->0 ROWS
+COMMIT <-- transaction closed
+SELECT * FROM TABLE_A 
+->A
+->1 ROW
+
+SERIALIZABLE
