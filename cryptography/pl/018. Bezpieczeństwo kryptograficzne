@@ -1,0 +1,17 @@
+Istnieją dwa rodzaje bezpieczeństwa kryptograficznego:
+-bezpieczeństwo informacyjne (teoretyczne - albo coś jest bezpieczne albo nie - podejście zero-jedynkowe)
+-bezpieczeństwo obliczeniowe (określanie ilości operacji do złamania szyfru w sensownym czasie)
+
+
+Bezpieczeństwo obliczeniowe określane jest za pomocą wzoru (t,e) - bezpieczne. 
+t - oznacza ilość operacji
+e (epsilon) - oznacza prawdopodobieństwo udanego ataku (wartości od 0 do 1)
+Przykład:
+(1000, 0,6) - bezpieczny oznacza, że przy 1000 operacji pradowpodobieństwo złamania szyfru to 60%.
+
+W praktyce jednak najczęściej mowa jest o 100 procentowym ataku. Czyli możliwe jest pozbycie się ze wzoru
+części określającej procent -> (t) - bezpieczny (potrzebne jest t operacji aby złamać szyfr).
+
+
+
+
