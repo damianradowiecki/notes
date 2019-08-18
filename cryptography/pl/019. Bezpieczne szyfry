@@ -1,0 +1,8 @@
+Na dzisiejsze potrzeby bezpiecznym szyfrem jest szyfr 128 biotwy chociaż coraz częściej spotykane są 256 bitowe.
+
+Zakładając, że jedna operacja łamania szyfru trwa jedną nanosekundę a wiek wszechświata to 2 do potęgi 88 nanosekund.
+Do złamania szyfru 128 bitowego potrzeba 2 do potęgi 128.
+Do złamania szyfru 256 bitowego potrzeba 2 do potęgi 256 (co jest niesamowicie dużą liczbą).
+
+Rozwój dzisiejszej technologi jednak zaczyna stanowić zagrożenie dla szyfrów 128 biotwych (np. komuptery kwantowe),
+stąd ruch w stronę 256 bitowych szyfrów, w których złamaniu nie będą w stanie pomóc nawet komputery kwantowe.
