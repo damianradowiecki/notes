@@ -1,0 +1,4 @@
+Istnieją trzy sposoby ochrony klucza:
+1. Opakowanie klucza - szyfrowanie klucza za pomocą innego klucza
+2. Generowanie klucza na bieżąco na podstawie hasła - podczas generowania klucza podawane jest hasło chroniące klucz
+3. Przechowywanie klucza w sprzętowym tokenie - karta/USB
