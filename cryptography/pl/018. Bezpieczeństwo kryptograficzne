@@ -12,6 +12,9 @@ Przykład:
 W praktyce jednak najczęściej mowa jest o 100 procentowym ataku. Czyli możliwe jest pozbycie się ze wzoru
 części określającej procent -> (t) - bezpieczny (potrzebne jest t operacji aby złamać szyfr).
 
-
-
-
+Jednak określanie bezpieczeństwa szyfru za pomocą jedynie ilości operacji jest słabym pomysłem.
+Trzeba brać pod uwgagę także:
+-możliwość zrównoleglenia ataku (wiele wątków atakuje)
+-pamięć operacyjna dostępna dla atakującego
+-możliwość wykonania wstępnych obliczeń przez atakująceo (np. stworzenie tablic)
+-dostępność wielu par szyfrogram-tekst (a nie tylko jednej)
