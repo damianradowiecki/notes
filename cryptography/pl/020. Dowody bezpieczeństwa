@@ -1,0 +1,6 @@
+Bezpieczeństwo kryptograficzne można udowodniać na sposoby:
+-za pomocą dowodów matematycznych
+-na podstawie innych problemów kryptograficznych
+-na podstawie heaurystyk - czyli prób złamania szyfru
+
+Najlepiej łączyć te sposoby.
