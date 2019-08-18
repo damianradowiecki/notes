@@ -1,0 +1,10 @@
+Klucze można generować na trzy sposoby:
+1. Losowo - użycie generatora PRNG
+2. Na podstawie hasła
+3. Poprzez protokół uzgadniania klucza - dwie lub więcej stron wymieniają komunikaty i kończy się to powstaniem klucza
+
+Do generowania kluczy najczęściej używane jest narzędzie OpenSSL:
+  Generowanie klucza symetrycznego (jeden losowy klucz):
+  openssl rand 16 -hex
+  Generowanie klucza asymetrycznego (klucz prywatny i klucz publiczny):
+  openssl genrsa 4096
