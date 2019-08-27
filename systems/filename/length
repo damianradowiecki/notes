@@ -1,0 +1,15 @@
+Filename maximum length depends on file system type:
+
+BTRFS   255 bytes
+exFAT   255 UTF-16 characters
+ext2    255 bytes
+ext3    255 bytes
+ext3cow 255 bytes
+ext4    255 bytes
+FAT32   8.3 (255 UCS-2 code units with VFAT LFNs)
+NTFS    255 characters
+XFS     255 bytes
+
+So for ext3 (255 bytes) filename like this: 
+dół 
+will have length of 5 bytes (1 byte, 2 bytes, 2 bytes)
