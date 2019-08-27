@@ -1,0 +1,10 @@
+String.length
+It check how many signs there is in a string.
+
+String.getBytes().length
+It check how many bytes are used to keep it in memory. For example if UTF-8 encoding is used,
+then string like this:
+dół
+will result in:
+"dół".length -> 3
+"dół.getBytes("UTF-8").length -> 5 (polish letters need two bytes in UTF-8 encoding)
