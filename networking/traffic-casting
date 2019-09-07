@@ -1,0 +1,26 @@
+Routers/siwtches can send traffic in many ways:
+------------------------------------------------------------
+| TYPE      | ASSOCIATIONS     | SCOPE           | EXAMPLE |
+------------------------------------------------------------
+| Unicast   | 1 to 1           | Whole network   | HTTP    | 
+------------------------------------------------------------
+| Broadcast | 1 to Many        | Subnet          | ARP     |
+------------------------------------------------------------
+| Multicast | One/Many to Many | Defined horizon | SLP     |
+------------------------------------------------------------
+| Anycast   | Many to Few      | Whole network   | 6to4    |
+------------------------------------------------------------
+
+Unicast example can be TCP connection when one host is requesting other host.
+  For example A goes to web browser and enters any existing website.
+  
+Broadcast is used mainly by networking devices like routers/switches to detect
+  something on the network. For example ARP checks MAC addresses for given IP.
+  
+Multicast is based on subscriptions - hosts subscribe to one casting. For example
+  Skype video casting for many receivers.
+  
+Anycast lets some hosts to share the same IP. For example Netflix machines are 
+  on the whole Earth with the same IPs. When user requests some resource from
+  Netflix it gets response from the closest machine (routers send requests to
+  the closest machine).
