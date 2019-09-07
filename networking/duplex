@@ -1,0 +1,16 @@
+HALF DUPLEX
+1. HOST A >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOST B
+2. HOST A <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOST B
+3. ...
+
+FULL-DUPLEX
+1. HOST A >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOST B
+   HOST A <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOST B  
+2. HOST A >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOST B
+   HOST A <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOST B 
+3. ...
+   ...
+   
+In half duplex packets are sent only in one direction in one time. Example - HUB.
+
+In full-duplex packets can be sent in two directions in one time. Example - switch.
