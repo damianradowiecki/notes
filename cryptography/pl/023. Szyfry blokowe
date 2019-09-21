@@ -1,0 +1,22 @@
+Szyfry blokowe to takie szyfry, które nie operują na pojedynczych bitach (tak działają szyfry strumieniowe),
+  a na blokach bitów.
+  
+  Szyfrowanie:
+  C = E(K,P)
+  C - ciphertext (szyfrogram)
+  E - encription algorithm
+  K - key
+  P - plain text (block of text)
+
+  Odszyfrowywanie:
+  P = D(K,C)
+  C - ciphertext (szyfrogram)
+  D - decription algorithm
+  K - key
+  P - plain text (block of text)
+  
+Rozmiar bloku
+
+Rozmiar bloku powinien być dostosowany do wymagań. Na dzień dzisiejszy sprzęt jakim się posługujemy (procesory)
+jest przystosowany do przetwarzania bloków o rozmiarze 128 bitów (przykład szyfru blokowego AES)
+Czym mniejsza długość bloku tym mniejsze bezpieczeństwo, ale czym dłuższa długość bloku tym mniejsza wydajność.
