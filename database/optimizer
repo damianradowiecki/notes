@@ -1,0 +1,1 @@
+Optimizer (in modern DBMSs) uses indices and statistics to optimize query execution.
