@@ -1,0 +1,37 @@
+Index - it is a tree structure used to optimize data retrieval. Memory parts where rows are stored are indexed.
+  For example there are three blocks (A,B,C) and A is for ids from 1-10000, B from 10001-20000, C from 20001-30000.
+  And each block is divided to 2 blocks (first, second).
+  To look for 23450 id:
+  1. This is in C block (memory pointer goes to C block)
+  2. This is in first part of C block (so pointer goes to the beginning of C block)
+
+https://www.essentialsql.com/what-is-a-database-index/
+
+
+
+Clustered index vs non-clustered index:
+
+With a clustered index the rows are stored on the disk in the same order as index:
+
+Id:1 Memory:1
+Id:2 Memory:2
+...
+
+So for one table can be only one clustered index.
+
+For non-clustered index there is another list that has pointers to the physical location.
+There can be a lot of non-clustered indices.
+Each new index slow down writing time. The more indices the slower saving.
+
+In general it is more efficient to retrieve data using clustered index (just use index)
+than non-clustered index (You have to go to index and then to the physical location).
+
+Remark: Writing to a table with clustered index can be slower if there is a need to rearrange the data:
+Id:1 Memory:1
+Id:2 Memory:2
+Id:4 Memory:3
+insert into ... id (3) -- it will take some time to rearrange to:
+Id:1 Memory:1
+Id:2 Memory:2
+Id:3 Memory:3
+Id:4 Memory:4
