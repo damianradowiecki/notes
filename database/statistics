@@ -1,0 +1,7 @@
+Statistics - info about tables like for example:
+  -total number of rows
+  -indices
+  -table space
+  -columns
+  
+It is used mainly by optimizer to optimize queries executions.
