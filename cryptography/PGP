@@ -1,0 +1,11 @@
+PGP - pretty good privacy - it is a utility used to encrypt emails. It was an open-source product for almost every
+    operating system.
+    The utility lets: 
+    -encrypt and decrypt messages
+    -make a cipher sign
+    -verify sender authenticity
+    -manage keys (public,private)
+    
+    At some point (version 5.0) it became a comercial product for all operating systems except unix based ones.
+    So then arose a new standard OpenPGP and a new open-source product - GNU Privacy Guard (GPG).
+
