@@ -1,0 +1,9 @@
+In order to make an virtual Network Interface Card mark Enable Network Adapter.
+Then there are some modes to choose:
+Not Attached - it means that virtual NIC exists but there is no connection to any network.
+NAT - 
+NAT Network - 
+Bridged Network - it behaves like a normal computer in a network. It has its own IP address.
+Host-only network - only host (which runs virtual machine) can connect to virtual machines.
+    And virtual machines can communicate with each other.
+Internal network - all virtual machines are in one networki without access to host.
