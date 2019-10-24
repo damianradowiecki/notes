@@ -1,8 +1,11 @@
 In order to make an virtual Network Interface Card mark Enable Network Adapter.
 Then there are some modes to choose:
 Not Attached - it means that virtual NIC exists but there is no connection to any network.
-NAT - 
-NAT Network - 
+NAT - it works like there would be an router in VirtualBox (remember: virtual boxi is just an apllication) which uses NAT. 
+    There is just a virtual router. A router in Virtual Box uses NAT (Network Address Translation). The virtual machine 
+    is invisible and unreachable from the outside internet. From outside internet there is only way to request virtual 
+    box application.
+NAT Network - is the same like NAT hovewer all virtual machines are in the same one network - they can see each other.
 Bridged Network - it behaves like a normal computer in a network. It has its own IP address.
 Host-only network - only host (which runs virtual machine) can connect to virtual machines.
     And virtual machines can communicate with each other.
