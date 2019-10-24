@@ -1,0 +1,5 @@
+Port forwarding - is NATs option that enables forwading requests to host machine to virtual machine.
+  There are rules which are used to do it (created by users):
+  Name:test Protocol: TCP HostIP: HostPort:2222 GuestIP: GuestPort:22
+  Which simply means:
+  If a TCP connection is received to the host on port 2222, send it on to the guest virual machine on TCP port 22.
