@@ -17,3 +17,6 @@ Why TWO phase commit?
 Because there are two phases:
 1. Preparing for commit
 2. Commit
+
+Sometimes we can see phrase XA Transactions which simply means - eXtended Architecture Transactions - 
+transactions between many systems (like for example microservices).
