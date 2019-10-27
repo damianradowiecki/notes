@@ -1,0 +1,33 @@
+Hibernate enables to map class inheritance to database model.
+There are three types of inheritance mapping in Hibernate:
+-single table (default)
+-table per class
+-joined
+
+Java Model:
+Vehicle:
+id
+name
+
+TwoWheeler extends Vehicle:
+SteeringHandle
+
+FourWheeler:
+SteeringWheel
+
+Single table - if every class is marked as entity, there will be one single table created with a discriminator:
+dtype | id | name | SteeringHandle | SteeringWheel
+
+dtype - discriminator type - it is used to discriminate types (it is configurable)
+
+Table per class - every entity has its own table in database model.
+
+Joined - it is the most normalized model. For considered class model the following table model will be created:
+Vehicle
+id | name
+
+TwoWheeler
+SteeringHandle | vehicleId
+
+FourWheeler
+SteeringWheel | vehicleId
