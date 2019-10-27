@@ -1,0 +1,19 @@
+In distributed applications there is a need to provide transaction managment over all apps.
+So there is a concept called two phase commit:
+
+Transaction manager:                  Apps:
+      -------Prepare for commit -------> 
+      <------Ready or Not---------------
+      -------Commit or rollback ------->
+      <------Done or Not ---------------
+      
+So at the beginning the transaction manager sends to all apps prepare for commit command.
+If all return that they are raedy, so then commit command is sent. If any of apps return
+Not ready state all transaction is rolled back (rollback command is sent to all apps).
+After Commit command there is possibility that not every app commit will happen, so
+then there are different recovery strategies.
+
+Why TWO phase commit?
+Because there are two phases:
+1. Preparing for commit
+2. Commit
