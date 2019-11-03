@@ -1,0 +1,26 @@
+JPA has @Embedded, @Embeddable, @EmbeddedId annotations.
+
+@Embedded + @Embeddable
+
+Table Person with fields:
+id
+name
+surname
+carModel
+carVersion
+
+It looks like this table should be divided into two Person and Car.
+JPA to the rescue! Person table can be mapped into two classes:
+
+@Entity
+class Person
+id
+name
+surname
+@Embedded
+Car
+
+@Embeddable
+class Car
+model
+version
