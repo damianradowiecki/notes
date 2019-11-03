@@ -1,0 +1,9 @@
+There are three types of cache in Hibernate:
+1. First level cache - for single session.
+2. Second level cache - cache across multiple sessions.
+3. Query level cache - for query.
+
+1. First level cache - is not configurable. It works by default. I works on a single session.
+2. Second level cache - is optional. It works across multiple sessions. It requires synchronization strategy between sessions.
+  Parameters: hibernate.cache.use_second_level_cache, hibernate.cache.provider_class, hibernate.cache.default_cache_concurrency_strategy
+3. Query level cache - is optional. It enables to cache a  single query result. Parameter hibernate.cache.use_query_cache
