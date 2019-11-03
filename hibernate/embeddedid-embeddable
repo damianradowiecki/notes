@@ -1,0 +1,22 @@
+JPA enables primary keys compound with two or more columns.
+
+Table Employee with columns:
+name
+directorId
+present
+hired
+
+And for example name and directorId are parts of primary key.
+
+In Java:
+
+@Embeddable
+class EmployeePK
+name
+directorId
+
+class Employee
+@Embedded
+EmployeePK
+present
+hired
