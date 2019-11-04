@@ -1,0 +1,29 @@
+This program:
+
+public class ProgramA {
+	public static void main(String[] args) {
+		System.out.println(spaghettiMethod());
+	}
+
+	public static int spaghettiMethod() {
+		try {
+			System.out.println("Starting execution");
+			throw new java.io.IOException();
+		} catch (java.io.IOException ex) {
+			System.out.println("Illegal IO");
+			return 1;
+		} catch (IllegalArgumentException ex) {
+			System.out.println("Illegal argument");
+			return 2;
+		} finally {
+			System.out.println("finally");
+			return 3;
+		}
+	}
+}
+
+Will print:
+Starting execution
+Illegal IO
+finally
+3
