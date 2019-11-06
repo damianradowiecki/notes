@@ -1,0 +1,10 @@
+Linux systems enables additional permission (standard: read, write, execute).
+
+To enable writing and disable deleting for users which are not owners:
+chmod a+t file
+
+There is catalogue catalogueX and its group is GROUP_A. To automatically set GROUP_A to all files inside catalogue catalogueX:
+chmod g+t catalogueX
+
+There is a file with owner ownerX. To enable anyone to execute this file with ownerX permissions:
+chmod u+s file
