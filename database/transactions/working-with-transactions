@@ -1,0 +1,17 @@
+First of all Your session autocomit must be set to 0 or OFF:
+set AUTOCOMMIT OFF;
+
+Then start transaction:
+start/begin transaction
+
+Then do some work:
+select * ...
+update ...
+update ...
+insert ...
+
+If everything is ok commit:
+commit
+
+If something went wrong roll back changes:
+rollback;
