@@ -1,0 +1,8 @@
+1. Git is decentralized. SVN is not.
+   With Git You have one central repo and many local repos (one for every developer). To commit to/revert changes from Git 
+   local repo there is no need of Internet. You can go to Bahamas and commit all changes to local repo, then You go back 
+   to your company an merge changes to central repo.
+   With SVN You need to have Internet connection all the time for committing or reverting changes.
+   
+2. Git is more difficult than SVN.
+   There is a lot of commands which are sometimes confusing in Git. SVN is much simpler.
