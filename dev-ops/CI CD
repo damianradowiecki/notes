@@ -1,0 +1,6 @@
+CI - continous integration
+CD - continous delivery
+
+Continous Integration means that developers tasks are integrated very often (small tasks for developers). Git/SVN/SONAR.
+
+Continous Delivery is about delivering product to end users as soon as possible. Jenkins/Bamboo/Doker.
