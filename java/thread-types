@@ -1,0 +1,7 @@
+There are two types of threads in Java: User and Daemon.
+
+User threads have high priority and program can't finish until all user threads are working.
+New Thread by default is a user thread.
+
+Daemon threads run in background, which means that they have low priority. Even if there are no user threads running and
+  daemon threads run a program will finish its execution.
