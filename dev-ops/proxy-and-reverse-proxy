@@ -1,0 +1,13 @@
+Proxy:
+CLIENT ---> PROXY SERVER --> SERVER
+
+So client doesn't know server. Client connect to PROXY SERVER. And PROXY SERVER connect to SERVER.
+It enables IP anonymity, caching, GeoFencing.
+
+Reverse proxy:
+                                  --> SERVER 1
+CLIENT ---> REVERSE PROXY SERVER  --> SERVER 2
+                                  --> SERVER 3
+So client doesn't know to which server it is connected. He connects to REVERSE PROXY SERVER.
+REVERSE PROXY SERVER connect to one of SERVERs. 
+It enables load balancing, canary deployment and so on.
