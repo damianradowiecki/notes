@@ -1,0 +1,7 @@
+Canary deployment is a technique of deploying some new features only to some servers (some users).
+
+At the beginning new feature is deployed to one server to which no user is routed.
+Then after some tests some users are routed (5-10% of all users).
+Then if everything is ok, one server more is launched and some more users are routed to this server.
+
+At some point all users use new feature, so servers with old functionality are shut down.
