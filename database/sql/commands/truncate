@@ -1,3 +1,4 @@
 TRUNCATE TABLE table_name
 
-Empty a table.
+Removes all table rows and RECOVERS space (delete doesn't do it).
+In some databases TRUNCATE operation can not be rolled back.
