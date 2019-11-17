@@ -1,0 +1,49 @@
+Dependencies:
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>2.2.6</version>
+        </dependency>
+        
+Sample bean:
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Document {
+
+    @NonNull
+    @Positive
+    private long id;
+    @Size(min = 3,message = "At least 3 characters")
+    private String name;
+    @Size(max= 20, message = "Max 20 characters")
+    private String owner;
+}
+
+Sample validation:
+
+ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        Validator validator = factory.getValidator();
+
+        List<Document> documents = new ArrayList();
+        documents.add(new Document(1, "Damian", "Test owner"));
+        documents.add(new Document(-5, "Da", "Test owner 34343432dddddddddddddddddddddddddsfsdfsd"));
+
+        for(Document d : documents){
+            Set<ConstraintViolation<Document>> violations = validator.validate(d);
+            for(ConstraintViolation<Document> cv : violations){
+                System.out.println(cv.getMessage());
+            }
+        }
