@@ -1,0 +1,2 @@
+Primitive types are initialized (wtih default values) only if they are part of a class - instance variables.
+Local primitive variables are not initialized by default.
