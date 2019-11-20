@@ -1,0 +1,48 @@
+Exists from version 3.1.
+
+Theory (from docs):
+Each time a targeted method is invoked, 
+the abstraction will apply a caching behavior checking whether 
+the method has been already executed for the given arguments.
+If it has, then the cached result is returned without having to execute the actual method; 
+if it has not, then method is executed, 
+the result cached and returned to the user so that, the next time the method is invoked, the cached result is returned.
+
+Practice:
+1. First of all a storage is needed:
+  There are a lot of options: JDK java.util.concurrent.ConcurrentMap based caches, 
+    EhCache, Gemfire cache, Guava caches and JSR-107 compliant caches.
+   
+2. Then @EnableCaching annotation must be put on configuration class.
+
+3. Annotations:
+
+  @Cacheable("books")
+  public Book findBook(ISBN isbn) {...}
+  
+  Results of findBook method calls is cached in books cache.
+  
+  
+  @CachePut(cacheNames="book")
+  public Book updateBook(ISBN isbn, BookDescriptor descriptor)
+  
+  To update cache value use @CachePut annotation - it takes the result of method,
+    and try to find it in cache and updates it.
+    
+    
+  @CacheEvict(cacheNames="books", allEntries=true)
+  public void loadBooks(InputStream batch)
+  
+  To clear cache user @CacheEvict.
+  
+  
+  @Caching(evict = { @CacheEvict("primary"), @CacheEvict(cacheNames="secondary", key="#p0") })
+  public Book importBooks(String deposit, Date date)
+  
+  For grouping all caching annotations use @Caching annotation.
+  
+  
+  @CacheConfig("books")
+  public class BookRepositoryImpl
+  
+  To apply one cache for each method in class use @CacheConfig.
