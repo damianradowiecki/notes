@@ -1,0 +1,5 @@
+JDBC - Java DataBase Connectivity
+
+JDBC drivers just implements interface java.sql.Driver
+
+And drivers establishe connections with database servers using class java.net.Socket.
