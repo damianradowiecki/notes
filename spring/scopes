@@ -1,0 +1,6 @@
+Singleton (default) - one and only one.
+Prorotype - every time new object.
+Session - for a user session.
+Request - for a single HTTP request
+Application - for the lifecycle of a ServletContext.
+Websocket - for WebSocket session only.
