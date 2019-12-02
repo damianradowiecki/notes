@@ -1,0 +1,9 @@
+Basic auth is about login and password.
+So if user wants to authorize using basic auth, he must add header Authorization with value:
+    
+                              Basic + base64(user+password)
+                              
+So example request with Authentication header:
+GET /users HTTP/1.1\r\n
+Host: localhost:8080\r\n
+Authorization: Basic ZGFtaWFuOjEyMzQ1\r\n
