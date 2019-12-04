@@ -1,0 +1,48 @@
+FacesContext - is context specific to JSF framework: components, validators...
+
+ExternalContext - offers access to Servlet or Portlet-specific artifacts which JSF is currently using "under the covers".
+    So it is possible to operate directly on objects like: 
+      HTTP servlet request, HTTP servlet response, HTTP session, Servlet context
+
+
+Example of external context use:
+//https://stackoverflow.com/questions/15850162/what-is-the-difference-between-facescontext-and-externalcontext
+public void pdf(String pdfUrl) throws IOException {
+	        // Get the FacesContext
+	        FacesContext facesContext = FacesContext.getCurrentInstance();
+	         
+	        // Get HTTP response
+	        HttpServletResponse response = (HttpServletResponse) facesContext.getExternalContext().getResponse();
+	         
+	        // Set response headers
+	        response.reset();   // Reset the response in the first place
+	        response.setHeader("Content-Type", "application/pdf");  // Set only the content type
+	         
+	        // Open response output stream
+	        OutputStream responseOutputStream = response.getOutputStream();
+	         
+	        // Read PDF contents
+	        URL url = new URL(pdfUrl);
+	        InputStream pdfInputStream = url.openStream();
+	         
+	        // Read PDF contents and write them to the output
+	        byte[] bytesBuffer = new byte[2048];
+	        int bytesRead;
+	        while ((bytesRead = pdfInputStream.read(bytesBuffer)) > 0) {
+	            responseOutputStream.write(bytesBuffer, 0, bytesRead);
+	        }
+	         
+	        // Make sure that everything is out
+	        responseOutputStream.flush();
+	          
+	        // Close both streams
+	        pdfInputStream.close();
+	        responseOutputStream.close();
+	         
+	        // JSF doc: 
+	        // Signal the JavaServer Faces implementation that the HTTP response for this request has already been generated 
+	        // (such as an HTTP redirect), and that the request processing lifecycle should be terminated
+	        // as soon as the current phase is completed.
+	        facesContext.responseComplete();
+
+	}
