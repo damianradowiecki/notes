@@ -1,0 +1,9 @@
+TypeScript = JavaScript + some more language features
+
+TypeScript at the end is converted into JavaScript code.
+
+TypeScript code will fail on the compilation phase, whereas JavaScript not (because it is not compiled - is interpreted).
+
+TypeScript files are .ts and JavaScript files are .js
+
+Good article: https://www.geeksforgeeks.org/difference-between-typescript-and-javascript/
