@@ -1,0 +1,5 @@
+FacesContext - is context specific to JSF framework: components, validators...
+
+ExternalContext - offers access to Servlet or Portlet-specific artifacts which JSF is currently using "under the covers".
+    So it is possible to operate directly on objects like: 
+      HTTP servlet request, HTTP servlet response, HTTP session, Servlet context
