@@ -1,0 +1,6 @@
+In Oracle it is possible to execute commands in string, for example:
+
+BEGIN
+EXECUTE IMMEDIATE ‘CREATE TABLE test(k1 INTEGER)’;
+END;
+/
