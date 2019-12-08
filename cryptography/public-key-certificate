@@ -1,0 +1,6 @@
+A public key certificate is a digitally signed document that serves to validate the sender's authorization and name.
+
+It usually contains (at least):
+-owner info
+-owner public key
+-digital signature (of a certification authority)
