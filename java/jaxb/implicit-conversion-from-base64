@@ -1,0 +1,2 @@
+JAXB implicitly converts byte array if it is in base64 format to decoded byte array. So undecoding is not needed in most cases. 
+  Hovewer JAXB API doesn't say about it at all.
