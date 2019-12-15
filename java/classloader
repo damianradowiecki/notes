@@ -1,0 +1,22 @@
+Classloader - loads classes to JVM.
+
+There are four possible classloaders:
+1. Bootstrap classloader - main (act as a first) class loader, loads classes from $JAVA_HOME/lib/*.jar
+2. Extension classloader - loads additional classes from $JAVA_HOME/lib/ext/*.jar
+3. System classloader - loads classes from classpath (described in CLASSPATH variable)
+4. Custom classloader - classloader created by a user.
+
+
+Class names conflict.
+If there are two classes with the same name: com.a.b.Test and com.a.b.Test, then only the first will be loaded.
+
+
+Hierarchism
+If any classloader can't find requested class, then it ask its parent if he has this class,
+and it goes recursively up to Bootstrap. If any of classloader couldn't find class, then
+the classloader (which initiated this mechanizm) tries to load the requested class.
+
+
+ClassNotFoundException vs NoClassDefFoundError
+ClassNotFoundException - is raised when classloader couldn't find a requested class.
+NoClassDefFoundError - is raised when there were problems with loading a requested class.
