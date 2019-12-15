@@ -1,0 +1,6 @@
+CAP threorem says that in distributed DATABASE systems only two of: 
+  Consistency, Availability, Partition Tolerance can be guaranteed.
+
+Consistency - every node has the same data at any time.
+Availability - system works 100% well, event if any node fails.
+Partition Tolerance - system still works, even if there are communication problems between nodes.
