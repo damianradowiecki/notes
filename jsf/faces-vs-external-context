@@ -6,7 +6,6 @@ ExternalContext - offers access to Servlet or Portlet-specific artifacts which J
 
 
 Example of external context use:
-//https://stackoverflow.com/questions/15850162/what-is-the-difference-between-facescontext-and-externalcontext
 public void pdf(String pdfUrl) throws IOException {
 	        // Get the FacesContext
 	        FacesContext facesContext = FacesContext.getCurrentInstance();
