@@ -1,0 +1,9 @@
+To show all Java logs put this in your class:
+
+static {
+	    ConsoleHandler handler = new ConsoleHandler();
+	    handler.setLevel(Level.ALL);
+	    Logger log = LogManager.getLogManager().getLogger("");
+	    log.addHandler(handler);
+	    log.setLevel(Level.ALL);
+}
