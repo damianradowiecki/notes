@@ -1,0 +1,8 @@
+public void listener(ValueChangeEvent valueChangeEvent)
+{
+      if (!valueChangeEvent.getPhaseId().equals(PhaseId.INVOKE_APPLICATION))
+		    {
+		      valueChangeEvent.setPhaseId(PhaseId.INVOKE_APPLICATION);
+		      valueChangeEvent.queue();
+		    }
+}
