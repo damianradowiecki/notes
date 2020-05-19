@@ -4,6 +4,9 @@ a - display all connections
 n - display active connentions
 o - display process id (PID)
 
+** See process name **
+tasklist /svc /FI "PID eq 488"
+
 Kill process:
 taskkill /PID PROCESS_ID
 
