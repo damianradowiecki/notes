@@ -1,0 +1,27 @@
+git config --list shows your current configuration, for example:
+            core.editor=nano.exe
+            credential.helper=manager
+            user.name=Damian
+
+git config --list --show-origin    shows configuration and the origin, for example: 
+            file:C:/dev/devtools/Git/etc/gitconfig  core.editor=nano.exe
+            file:C:/Users/Damian/.gitconfig user.name=Damian
+
+git XXX -h shows all possible XXX command parameters, for example:
+            git add -h
+            usage: git add [<options>] [--] <pathspec>...
+
+                -n, --dry-run         dry run
+                -v, --verbose         be verbose
+                -i, --interactive     interactive picking
+                [...]
+
+git init - creates a git database (.git folder)
+
+git diff vs git diff --staged
+  git diff            shows changes between unstaged area and staged area
+  git diff --staged   shows changes between staged area and last commited version (--cached can be used instead - it is a synonym for --staged)
+  
+git rm FILE - removes a file from git database AND FROM WORKSPACE
+
+git rm --cached FILE - removes a file from git database only (the file stays in workspace)
