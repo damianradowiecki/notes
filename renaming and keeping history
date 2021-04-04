@@ -1,0 +1,14 @@
+GENARALLY
+Git by default does not keep history when you change filename (doesn't matter if you use mv or git mv or do it manually).
+
+GIT TRICK TO FIND RENAMED FILES HISTORY
+But if you only rename a file, then Git is able to find out that the file was only renamed (compares files content).
+To see a renamed file full history use:
+git log --follow ./path/to/file
+
+
+RENAMING A FILE AND CHANGING ITS CONTENT - HOW NOT TO LOSE HISTORY?
+To keep history of a file when you are going to rename it and change its content you must: put it in two separate commits:
+1. First commit contains only a file name change
+2. Second commit contains all files changes
+REMEMBER NOT TO SQUASH COMMITS
