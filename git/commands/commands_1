@@ -25,3 +25,9 @@ git diff vs git diff --staged
 git rm FILE - removes a file from git database AND FROM WORKSPACE
 
 git rm --cached FILE - removes a file from git database only (the file stays in workspace)
+
+git reset HEAD filename  -  removes a file from staging area (--hard option reset file in a working space)
+git restore --staged filename - the same as above (works from Git 2.23.0 onwards)
+
+git checkout -- filename  -  unmodifies a file, it resets changes in a working space to last commit
+git restore filename - the same as above (works from Git 2.23.0 onwards)
