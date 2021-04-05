@@ -1,0 +1,5 @@
+It is possible to correct (amend) your LAST commit using --amend option:
+1. Put anything you want to include in a recent commit to staging area
+2. Enter: git commit --amend
+
+These changes will be included in a recent commit without changing anything in it.
