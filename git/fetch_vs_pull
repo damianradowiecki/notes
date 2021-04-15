@@ -1,0 +1,6 @@
+git fetch updates remote-tracking branches under .git/refs/remotes/<remote>/. It does not affect a working directory.
+
+git pull does a git fetch followed by a git merge. I does affect a working directory.
+
+
+git pull = git fetch -> git merge
