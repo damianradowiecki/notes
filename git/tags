@@ -1,0 +1,15 @@
+Any commit (revision) can be tagged:
+git tag tag_name    -   tags current version with 'tag_name'
+git tag tag_name 9fceb02    -   tags a commit with sha 9fceb02
+
+Show all tags:
+git tag
+
+Show current version tags:
+git tag --points-at HEAD
+
+Tags are not automatically pushed with 'git push', so you have to push it manually:
+git push origin tag_name
+
+To checkout to a version marked with some tag:
+git checkout tag_name
