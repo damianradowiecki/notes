@@ -1,0 +1,7 @@
+Git stores versions as snapshots
+SVN stores versions as deltas
+
+Snapshot - it is just a hard copy of all files at a given time - it needs more memory
+Delta - it is a difference between files - it needs less memory
+
+Git snapshots - does not copy all files at every version - it only copies the changed ones and the references to the others (not changed)
