@@ -1,0 +1,9 @@
+Let's say we have the following situation (I want to merge branch B to branch A):
+git checkout A
+git merge B
+
+Strategies:
+fast forward - is happens when there are no other changes on branch A since they diverged, so then Git just moves the A branch pointer at the end of branch B - goes forward,
+      there is no additional commits here
+      
+TODO three way merge vs recursive three way merge https://en.wikipedia.org/wiki/Merge_(version_control)#Recursive_three-way_merge
