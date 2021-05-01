@@ -1,0 +1,8 @@
+HEAD - is a pointer to your current revision. In other words, HEAD answers the question, “Where am I right now?”. 
+        Git automatically moves the HEAD pointer along when you create a new commit. 
+
+Detachet HEAD - it is a situation when the HEAD pointer does not point on the last revision in branch, but any of previous ones.
+
+How to go back to your branch?
+
+git checkout branch_name
