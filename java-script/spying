@@ -1,0 +1,20 @@
+spies can be used to check if a method has been called, for example:
+
+var ABC = function(){};
+ABC.prototype.A = function(){
+  console.log('A');  
+}
+
+ABC.prototype.B = function(){
+  this.A();
+}
+
+describe("...", function(){
+	it("test spy", function(){
+		let abc = new ABC();
+		spyOn(abc, "A");
+		abc.B();
+		expect(abc.A).toHaveBeenCalled();
+	});
+	
+});
