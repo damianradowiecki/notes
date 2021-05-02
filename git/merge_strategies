@@ -3,7 +3,14 @@ git checkout A
 git merge B
 
 Strategies:
-fast forward - is happens when there are no other changes on branch A since they diverged, so then Git just moves the A branch pointer at the end of branch B - goes forward,
+fast forward - happens when there are no other changes on branch A since they diverged, so then Git just moves the A branch pointer at the end of branch B - goes forward,
       there is no additional commits here
       
-TODO three way merge vs recursive three way merge https://en.wikipedia.org/wiki/Merge_(version_control)#Recursive_three-way_merge
+three-way merge - is a default in Git and is used when some work has been done on A and B branches since diverging. In this kind of merge three revisions are
+      taken into account:
+      -last revision from A branch
+      -last revision from B branch
+      -common ancestor
+      As a result of three way merge a new revision (commit) is created.
+      
+      
