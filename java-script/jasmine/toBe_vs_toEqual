@@ -1,0 +1,2 @@
+toBe matcher is rather like "===" (compares value and type)
+toEqual matcher is rather like "==" (compares value)
