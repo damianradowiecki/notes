@@ -1,2 +1,4 @@
 Downstream is a local repo
 Upstream is a remote repo
+
+set-upstream is well explained here: https://devconnected.com/how-to-set-upstream-branch-on-git/
