@@ -1,0 +1,22 @@
+var myModule = angular.module(...);
+
+myModule.directive('drButton', function factory(injectables){
+
+  var directiveDefinitionObject = {
+    restrict: ...,
+    priority: ...,
+    ...
+  
+  }
+  
+  return directiveDefinitionObject;
+}
+
+Directive options:
+-restrict - states how a directive can be used, default is 'A' - attribute only (E - as element, A - attribute, C - css class, M - comment)
+-priority - the higher priority the sooner it will be applied (it is used when elements are next to each other)
+-template - is a textual definition of a template ('<div> aaa</div>...')
+-templateUrl - it is a link to a template
+-transclude - enables to keep the content inside directive (ng-transclude directive says where should the content be put),
+              a good explanation is here https://stackoverflow.com/questions/24725399/what-is-ng-transclude
+-
