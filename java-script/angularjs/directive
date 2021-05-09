@@ -19,4 +19,7 @@ Directive options:
 -templateUrl - it is a link to a template
 -transclude - enables to keep the content inside directive (ng-transclude directive says where should the content be put),
               a good explanation is here https://stackoverflow.com/questions/24725399/what-is-ng-transclude
--
+-compile - it is a function with the following prototype: function compile(element, attrs, transclude){...}
+          the function is run during compilation phase - transforming DOM - the function is run only once.
+-link - it is a function with the following prototype: function compile(scope, element, attrs){...}
+          the function is run during linking phase - links element with model (scope) - the function is run once per every directive element in DOM.
