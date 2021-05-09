@@ -31,3 +31,5 @@ git restore --staged filename - the same as above (works from Git 2.23.0 onwards
 
 git checkout -- filename  -  unmodifies a file, it resets changes in a working space to last commit
 git restore filename - the same as above (works from Git 2.23.0 onwards)
+
+git push origin --delete serverfix  -  removes serverfix branch poninter from origin server (data itself will be removed by garbage collection)
