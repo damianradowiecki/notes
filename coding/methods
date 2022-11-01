@@ -1,3 +1,0 @@
-PL
-1. Błędy (w tym wypadku niepoprawne wartości argumentów) trzeba wykrywać tak szybko jak to tylko możliwe
-  - na poczatku metody powinny zostać sprawdzone wszystkie arguementy.
